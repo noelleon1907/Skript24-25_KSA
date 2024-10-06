@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<title>Informatik Skript 3. Klasse</title>	
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../SkriptStyle.css">
+</head>
+
+<body>
+
+    <div class="pageTitle">Rastergrafik</div>
+    
+	<div class="main">
+      
+		<div class="navigation">
+			<div class="navPart"> <a href="../Skript.html">Hauptseite</a> </div>
+			<div class="navPart"> <a href="ASCII.html">vorherige Seite</a> </div>
+			<div class="navPart"> <a href="Algorithmen.html">nächste Seite</a> </div>        
+		</div>    
+	  
+		<div class="content"> 
+
+			<p>Mit Hilfe von digitalen Bildformaten können Bilder als Folge von 0-en und 1-en gespeichert und anschliessend wieder als Bild 
+			dargestellt werden. Dabei gibt das Bildformat vor, was eine 0 bzw. eine 1 an jeder Stelle zu bedeuten hat. Die am weitesten 
+			verbreiteten Bildformate sind <b>Raster</b>- und <b>Vektorgrafiken</b>.	</p>
+
+			<p>	Ein reines Rastergrafikformat enthält einen sehr kurzen Anfangsteil, der Informationen über  die Dimensionen des Bildes und die 
+			Farbtiefe enthält. Der Rest der Datei enthält einfach nur Bits, mit denen für jedes einzelne Pixel von oben links bis unten rechts 
+			die Farbe angegeben wird. Wieviele Bits zu einem Pixel gehören, wird durch die im Anfangsteil festgelegte Farbtiefe bestimmt. </p>
+
+			<p> Wir betrachten ein einfaches Rasterformat, bei welchem zuerst durch eine 1-Byte-Zahl festgelegt wird, 
+			wieviele Pixel das Bild breit ist, danach wird ebenfalls durch eine 1-Byte-Zahl die Anzahl der Pixel in der Höhe festgelegt. 
+			Das nächste Byte legt die Farbtiefe fest, diese 1-Byte-Zahl gibt die Anzahl der unterschiedlichen Farben eines Pixels an. 
+			Alle Bits, welche danach kommen, geben die Farben einzelner Pixel von oben links nach unten rechts an, wobei immer 
+			soviele Bits zu einem Pixel gehören, wie durch die Farbtiefe festgelegt wurde. Der folgende Code ergibt nach diesem Format das 
+			gezeigte Bild: </p>
+
+			<p><img src="../Bilder/Rastergrafik.png" width="400" alt="Rastergrafik Beispielbild" style="float:right; margin-right:20px">
+			<p>
+			0001000100001010000000111100000010101110001000101100
+				0000101011100010001011000000101011100010001011000000
+				1010111000100010110000001010111000100010110000001010
+				1110001000101100000010101110001000101100000010101110
+				0010001011000000101011100010001011000000101011100010
+				0010110000001010111000100010110000001010111000100010
+				1100000010101110001000101100000010101110001000101110<br>
+				00
+				</p>
+		 
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<p>Das erste Byte gibt die Breite an, in diesem Fall 17 Pixel; das nächste Byte die Höhe, in diesem Fall 10 Pixel. 
+			Das dritte Byte	- also das letzte Byte - legt fest, wieviele Bits pro Pixel verwendet werden. In 
+			diesem Fall 3, d.h. immer drei Bits zusammen enthalten die Information zu einem Pixel, wobei das erste Bit für rot, das zweite für 
+			grün und das dritte für blau steht. </p>
+			
+			<p> &emsp;&emsp; 0001 0001 0000 1010 0000 0011 </p> 
+			
+			<p>Danach geben je drei Bits miteinander die Farbe der Pixel von links oben bis rechts unten an.</p>
+			
+			<p> &emsp;&emsp; 110 000 001 010 111 000 100 010 110 000 001 010 111 000 100 010 110 <br> 
+				&emsp;&emsp; 000 001 010 111 000 100 010 110 000 001 010 111 000 100 010 110 000 <br>
+				&emsp;&emsp; 001 010 111 000 100 010 110 000 001 010 111 000 100 010 110 000 001 <br>
+				&emsp;&emsp; 010 111 000 100 010 110 000 001 010 111 000 100 010 110 000 001 010 <br>
+				&emsp;&emsp; 111 000 100 010 110 000 001 010 111 000 100 010 110 000 001 010 111 <br>
+				&emsp;&emsp; 000 100 010 110 000 001 010 111 000 100 010 110 000 001 010 111 000 <br>
+				&emsp;&emsp; 100 010 110 000 001 010 111 000 100 010 111 000 	 
+			</p>
+
+			<p>Wir können uns vorstellen, dass die Informationen eines Bildes so leicht übermittelt und danach wieder zu einem Bild zusammengesetzt	
+			werden können. Wenn ein Bild sehr viel mehr Pixel und für jedes dieser Pixel menr Information über die Farbtiefe enthält, so können Bilder 
+			in der Qualität entstehen, welche wir uns im Alltag gewohnt sind. Dabei können wir uns vorstellen, wieviele Ziffern für ein einziges 
+			Frame eines Videos übermittelt werden müssen - Videos auf YouTube haben zwischen 30 und 60 Frames pro Sekunde!</p>
+			
+			<p>Mit diesem <a href="https://studio.code.org/s/pixelation/stage/5/puzzle/1">Interactive</a> kann mit einem einfachen Rastergrafikformat 
+			experimentiert werden.</p>
+		</div>  
+    
+	</div>  
+
+    <footer><p>Informatik Skript 3. Klass</p></footer>
+
+</body>
+</html>
+

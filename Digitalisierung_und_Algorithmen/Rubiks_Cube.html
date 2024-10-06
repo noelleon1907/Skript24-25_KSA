@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+
+<html lang="de">
+<head>	
+<title>Informatik Skript 3. Klasse</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../SkriptStyle.css">
+</head>
+
+<body>
+
+    <div class="pageTitle">Rubik's Cube</div>
+    
+	<div class="main">
+      
+		<div class="navigation">
+			<div class="navPart"> <a href="../Skript.html">Hauptseite</a> </div>
+			<div class="navPart"> <a href="Euklidscher_Algorithmus.html">vorherige Seite</a> </div>
+			<div class="navPart"> <a href="../Mein_Computer/Marke.html">nächste Seite</a> </div>        
+		</div>    
+	  
+		<div class="content"> 
+
+					
+			<p>  <img src="../Bilder/Rubikscube.jpeg" height="170" alt="Rubiks Cube Abbildung" style="float:right; margin-left:20px"> 
+			Zum Lösen eines Rubik's Cubes gibt es verschiedene Algorithmen. Diese beschreiben, wie der Würfel durch eine bestimmte Abfolge 
+			von einfachen Arbeitsschritten (welche selbst wieder das Befolgen eines Algorithmus sein können) gelöst werden kann. Diese sind 
+			<b>allgemein</b>, weil sie nicht nur für spezielle Ausgangssituationen angewendet werden können, sie sind <b>eindeutig</b>, wenn in 
+			jeder Situation feststeht, was der nächste Schritt sein soll, sie sind <b>ausführbar</b>, weil die einzelnen Arbeitsschritte einfach 
+			auszuführen sind, sie sind <b>endlich</b>, weil der Würfel nach einer endlichen Anzahl von Arbeitsschritten gelöst ist und sie sind <b>korrekt</b>, 
+			weil sie zur Lösung des Würfels führen. </p>
+			<p> Die Anfängermethode Layer-by-Layer (Schicht für Schicht) zeigt anschaulich, wie mit der Steigerung des Schwierigkeitsgrades auch die 
+			Notwendigkeit von Algorithmen dringlicher wird: </p>
+			<p><img src="../Bilder/Rubik erste Schritte.jpg" height="150" alt="Rubiks Cube Abbildung" style="float:left; margin-right:20px">
+			<h4>1. Schicht:</h4> "Das Kreuz" über die vier Kantensteine zu erstellen, so dass sie auf die Mittelsteine der Seitenflächen stimmen, ist meist
+			ohne Algorithmus möglich. Auch die vier Ecksteine danach richtig zu platzieren funktioniert mit Überlegen.</p> 
+			<p><img src="../Bilder/Rubik zweite Schicht 1.jpg" height="280" alt="Rubiks Cube Abbildung" style="float:right; margin-left:20px"></p><p>
+			<h4>2. Schicht:</h4> Die Kantensteine der zweiten Schicht auszurichten, braucht schon Algorithmen, die mindestens 8 Züge lang sind.
+			<a href=https://de.wikibooks.org/wiki/Zauberw%C3%BCrfel/_3x3x3/_Anf%C3%A4nger/_2._Ebene/_oben>Grafische Anleitung für die zweite Schicht.</a></p> 
+			<p> <h4>3. Schicht:</h4> Diese Schicht ist ohne Algorithmen nicht mehr lösbar. Der Algorithmus "Lösen der 3. Schicht" muss in folgende
+			Teilalgorithmen aufgeteilt werden:
+			<ul><li> Anordnung der Kantensteine</li><li>Ausrichten der Kantensteine</li><li>Anordnen der Ecksteine</li><li>Ausrichten der Ecksteine</li></ul>
+			Diese Teilalgorithmen bestehen jeweils wiederum aus 7-14 Zügen.
+			<a href=https://de.wikibooks.org/wiki/Zauberw%C3%BCrfel/_3x3x3/_Anf%C3%A4nger/_3._Ebene>Grafische Anleitung für die dritte Schicht.</a>
+			
+			
+			
+			<p> Die Layer-by-Layer-Methode ist eine von vielen. Sie reicht, um den Würfel in sinnvoller Zeit zu lösen. Wenn der Würfel in möglichst
+			wenigen Arbeitsschritten oder in möglichst kurzer Zeit gelöst werden soll, können Algorithmen verwendet werden, welche die
+			spezielle Ausgangsitutation mitberücksichtigen, dies führt aber zu einer Einschränkung der Allgemeinheit und der Ausführbarkeit. 
+			Für Wettkämpfe werden ausserdem besondere, technisch ausgeklügelte Würfel verwendet.
+			<a href=https://de.wikibooks.org/wiki/Zauberw%C3%BCrfel/_3x3x3>Alternative Lösungsmethoden.</a></p>
+			
+			<p> Mit jedem neuen Lösen versteht man mehr vom Rubik's Cube. Anfangs fällt einem die erste Schicht schwer, mit der Zeit versteht man aber,
+			warum ein Algorithmus genau so ablaufen muss. Wenn man die Anfängermethode beherrscht, kann man sich deshalb entweder an andere Algorithmen oder
+			an andere Würfel wagen. Man wird merken, dass schon andere Farben, Bilder oder Schnitte zu neuen Herausforderungen führen, aber auch andere Formen
+			oder andere Würfel.</p>
+			
+			<p><h2>Auftrag:</h2> Lösen Sie die erste Schicht eines 3x3x3 Würfels zehn Mal ohne Algorithmen (man beginnt meist mit der weissen Seite). Versuchen Sie, Ihren selbst gefundenen
+			Algorithmus grafisch festzuhalten. Erst wenn Sie die Seite 3x nacheinander ohne Fehler zu lösen vermochten, beginnen Sie mit der zweiten Schicht.</p>
+			<p>Wenn Sie den Würfel vollständig lösen können, stoppen Sie die Zeit und versuchen Sie, sich zu verbessern.</p>
+				
+		</div>  
+
+	</div>	
+	
+    <footer><p>Informatik Skript 3. Klasse</p></footer>
+
+</body>
+</html>
+

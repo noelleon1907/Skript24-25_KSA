@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<title>Informatik Skript 3.Klasse</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../SkriptStyle.css">
+</head>
+
+<body>
+
+    <div class="pageTitle">HTML-Tags</div>
+    
+	<div class="main">
+      
+		<div class="navigation">
+			<div class="navPart"> <a href="../Skript.html">Hauptseite</a> </div>
+			<div class="navPart"> <a href="HTML.html">vorherige Seite</a> </div>
+			<div class="navPart"> <a href="HTML-Struktur.html">nächste Seite</a> </div>        
+		</div>    
+	  
+		<div class="content">
+
+			<p> Im Quelltext muss beschrieben werden, wie die Seite, welche der Browser anzeigt, aussieht und was sie beinhaltet. 
+			HTML kennt verschiedene vordefinierte Elemente, diese werden mit <b>Tags</b> ausgezeichnet, wobei das, was dann zu diesem 
+			Element gehört, zwischen ein Anfangstag <span class="code">&lt; ... &gt;</span> und ein Endtag <span class="code">&lt;/ ... &gt;</span> (an Stelle der drei Punkte 
+			wird der Name des Tags geschrieben) geschrieben wird.</p> 
+
+			<table>
+				<tr>
+					<th>Anfangstag &nbsp;&nbsp;</th> <th>Endtag &nbsp;&nbsp; &nbsp;&nbsp;</th> <th>&nbsp;&nbsp;</th> <th>Element</th>
+				</tr>
+
+				<tr>
+					<td class="code">&lt;p&gt;  </td> <td class="code"> &lt;/p&gt; </td> <td> </td>  <td>Abschnitt, wird immer auf einer neuen Zeile begonnen</td>
+				</tr>
+
+				<tr>
+					<td class="code">&lt;h1&gt; </td> <td  class="code"> &lt;/h1&gt; </td> <td> </td> <td>Überschrift 
+					(mit den Tags <span class="code">h2</span>, <span class="code">h3</span>, <span class="code">h4</span> ... 
+					werden immer kleinerwerdende Überschriften erstellt) </td>
+				</tr>
+				
+				<tr>
+					<td class="code">&lt;b&gt; </td> <td class="code"> &lt;/b&gt; </td> <td> </td> <td>fetter Text (engl. "bold") </td>
+				</tr>
+				
+				<tr>
+					<td class="code">&lt;i&gt; </td> <td class="code"> &lt;/i&gt; </td> <td> </td> <td>kursiver Text (engl. "italic")</td>
+				</tr>
+			
+			</table>
+
+			<p >Tags können mit <b>Attributen</b> erweitert werden, welche das mit dem Tag ausgezeichnete Element näher spezifizieren. Die Attribute werden 
+			in den Anfangstag hineingeschrieben, das Endtag bleibt unverändert. Beispielsweise kann ein Abschnitts-Element mit einem Attribut so erweitert werden, dass der Abschnitt zentriert 
+			dargestellt wird: <span class="code">&lt;p style="text-align:center;"&gt;</span> </p>
+
+			<p> Der folgende Quellcode ergibt die untenstehende Ausgabe: </p>
+
+			<img src="../Bilder/Tags_Beispiel.png"><div>
+				
+			<h1>Erster Abschnitt</h1>
+			<p> Text des <b>ersten</b> Abschnittes.</p>
+			<h2>Zweiter Abschnitt</h2>
+			<p style="text-align:center;"> Text des zweiten Abschnittes <i>(dieses mal zentriert)</i> </p>
+				
+
+ 
+		</div>  
+    
+	</div>
+	
+	</div>  
+
+    <footer><p>Informatik Skript 3.Klasse</p></footer>
+
+</body>
+</html>
+
